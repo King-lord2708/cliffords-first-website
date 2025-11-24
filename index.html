@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>TechNova Solutions</h1>
+    <button id="darkToggle" aria-label="Toggle Dark Mode">🌙</button>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero Section">
+      <div class="overlay">
+        <h2>Innovating the Future of Technology</h2>
+        <p>From smart devices to cutting-edge software, we make ideas come alive.</p>
+        <a href="#contact" class="cta">Contact Us</a>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- About Section -->
+    <section class="about" aria-label="About TechNova Solutions">
+      <article>
+        <h2>About Us</h2>
+        <p>
+          TechNova Solutions designs and engineers futuristic technology solutions. 
+          We focus on delivering cutting-edge products and services to help businesses grow.
+        </p>
+        <p>Our key services include:</p>
+        <ul>
+          <li>Software Development</li>
+          <li>Smart Device Integration</li>
+          <li>UX/UI Design</li>
+          <li>Technology Consulting</li>
+        </ul>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-label="Contact Form">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Jane Doe" required><br>
+
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required><br>
+
+        <label for="subject">Subject</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Project enquiry" required><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea><br>
+
+        <button type="submit">Send Message</button>
+        <p id="feedback" role="alert"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <p>&lt;&lt;&lt;© <span id="year"></span> TechNova Solutions&gt;&gt;&gt;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
